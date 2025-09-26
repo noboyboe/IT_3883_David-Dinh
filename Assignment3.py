@@ -7,6 +7,9 @@
 # List Specific resources used to complete the assignment.
 #https://www.tutorialspoint.com/python/tk_entry.htm
 #https://www.tutorialspoint.com/python/python_gui_programming.htm
+#https://www.askpython.com/python-modules/tkinter/stringvar-with-examples
+#https://www.geeksforgeeks.org/python/args-kwargs-python/
+#https://www.geeksforgeeks.org/python/tracing-tkinter-variables-in-python/
 
 import tkinter as tk
 
@@ -33,3 +36,4 @@ final = tk.Label(window, text="Result: ")
 final.pack()
 
 window.mainloop()
+
