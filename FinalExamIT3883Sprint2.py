@@ -5,6 +5,9 @@ def remove():
     for x in item:
         if x == "and":
             item.remove("and")
+        else:
+            print("Statement error.")
+            quit()
     return item
 #remove() splits the statement into a list and removes "and" to make it easier to convert.
 
@@ -24,6 +27,8 @@ def convert(item):
             dollar = 0.10
         elif coin in ["quarter", "quarters"]:
             dollar = 0.25
+        else:
+            print("Statement error.")
 #Looks for keywords in the statement and changes the values of "quantity" and "dollar" to multiply and add on to the "final_total"
         final_total += quantity * dollar
         i += 2
@@ -32,5 +37,6 @@ def convert(item):
 
 clean_list = remove()
 convert(clean_list)
+
 
 
